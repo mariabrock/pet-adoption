@@ -4,7 +4,7 @@ body {
     color: #212121;
 }
 
-.dogs {
+#dog {
     background-color: #D1C4E9;
     border-radius: 12px;
     font-family: 'Source Code Pro', monospace;
@@ -16,7 +16,7 @@ body {
     margin: 4px 2px;
   }
 
-  .cats {
+  #cat {
     background-color: #FFEB3B;
     border-radius: 12px;
     font-family: 'Source Code Pro', monospace;
@@ -28,7 +28,7 @@ body {
     margin: 4px 2px;
   }
 
-  .dinos {
+  #dino {
     background-color: #673AB7;
     border-radius: 12px;
     font-family: 'Source Code Pro', monospace;
@@ -40,7 +40,7 @@ body {
     margin: 4px 2px;
   }
 
-  .allpets {
+  #allpets {
     background-color: #757575;
     border-radius: 12px;
     font-family: 'Source Code Pro', monospace;

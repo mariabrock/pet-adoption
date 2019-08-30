@@ -215,39 +215,43 @@ const petSelector = [
 
 
   const printToDOM = (toPrint, divId) => {
-    document.getElementById(divId).innerHTML = toPrint
+    document.getElementById(divId).innerHTML = toPrint;
 };
 
 const petBuilder = (petArray) => {
     let domString = ''
     for (let i = 0; i < petArray.length; i++) {
-        const pet = petArray[i];
+        const petCard = petArray[i];
         domString += `
-        <div class="master">
-            <h2>${pet.name}</h2>
-            <img src=${pet.image} alt='Image of ${pet.name}' />
-            <p>Favorite color: ${pet.color},
-            Skill: ${pet.specialSkill},
-            ${pet.type}
+        <div class="card">
+            <h2>${petCard.name}</h2>
+            <img src="${petCard.imageUrl}" alt="Image of ${petCard.name}" />
+            <p>Color: ${petCard.color}</p>
+            <p>Special Skill: ${petCard.specialSkill}</p>
+            <p>Type: ${petCard.type}</p>
         </div>
-        `
+        `;
     }
-    printToDOM(domString, 'master');
+    printToDOM(domString, 'card');
   };
 
-const buttonClick = (e) =>{
+const buttonClick = (e) => {
     const petType = e.target.id;
     const selectedPets = [];
     for (let i = 0; i < petSelector.length; i++) {
         const thisPet = petSelector[i];
-        if (pet.specificPet === specificPet) {
-            selectedPets.push(petType);
+        if (thisPet.type === petType) {
+            selectedPets.push(thisPet);
         }
     }
-    petBuilder(petSelector);
+    if (petType === 'allpets') {
+        petBuilder(petSelector);
+    } else {
+        petBuilder(selectedPets);
+    }
 }
 
   document.getElementById('cat').addEventListener('click', buttonClick);
   document.getElementById('dog').addEventListener('click', buttonClick);
   document.getElementById('dino').addEventListener('click', buttonClick);
-  document.getElementById('all').addEventListener('click', buttonClick);
+  document.getElementById('allpets').addEventListener('click', buttonClick);
