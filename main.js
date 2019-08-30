@@ -1,0 +1,1 @@
+console.log("Adopt a new friend today!");
