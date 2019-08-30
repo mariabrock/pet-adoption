@@ -1,3 +1,53 @@
 body {
     background-color: #512DA8;
+    font-family: 'Source Code Pro', monospace;
+    color: #212121;
 }
+
+.dogs {
+    background-color: #D1C4E9;
+    border-radius: 12px;
+    font-family: 'Source Code Pro', monospace;
+    color: #757575;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .cats {
+    background-color: #FFEB3B;
+    border-radius: 12px;
+    font-family: 'Source Code Pro', monospace;
+    color: #757575;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .dinos {
+    background-color: #673AB7;
+    border-radius: 12px;
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .allpets {
+    background-color: #757575;
+    border-radius: 12px;
+    font-family: 'Source Code Pro', monospace;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
