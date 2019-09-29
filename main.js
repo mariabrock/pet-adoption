@@ -202,7 +202,7 @@ const petSelector = [
       color: "Green",
       specialSkill: "Gives hugs with appropriate pressure and for the right length of time.",
       type: "Cat",
-      imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg"
+      imageUrl: "https://izismile.com/img/img2/20090219/cats_02.jpg"
     },
     {
       name: "Lucy",
